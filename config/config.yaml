@@ -1,0 +1,17 @@
+#--------------------------------------------------------------------
+# bloco responsavel por definir de onde os arquivos serao copiados
+# em make copy
+#--------------------------------------------------------------------
+copy:
+  reest:
+    dir: 3.DCGF/3.Reestimativa/reestimativa_2017/!base/
+    files:      
+      copy_reest_rec: reest_rec.xlsm
+      copy_reest_desp: reest_desp.xlsm
+  exec:
+    dir: ~/Downloads/execucao/project-template/
+    files:
+      copy_exec_rec: exec_rec.xls
+      copy_exec_desp: exec_desp.xls
+      copy_exec_suplementacao: exec_suplementacao.xls
+      copy_exec_cota: exec_cota.xls
