@@ -12,7 +12,7 @@ TARGETS_COPY_REEST := $(shell Rscript config/R/get_targets_copy.R reest 2> logs/
 help: 
 	@grep -E '^[a-zA-Z_-]+:.*?## .*$$' Makefile | awk 'BEGIN {FS = ":.*?## "}; {printf "\033[36m%-10s\033[0m %s\n", $$1, $$2}'
 
-copy: copy_exec copy_reest copy_loa copy_ldo ## Copia a base da receita e da despesa para sua pasta local
+copy: copy_exec copy_reest ## Copia a base da receita e da despesa para sua pasta local
 
 #====================================================================
 # bases reest
